@@ -39,6 +39,9 @@ class Cliente{
                 "Cedula: %s",this.getNombre(),this.getApellido(),this.getCedula());
     }
 }
+
+
+
 class Banco{
     private String nombreBanco;
     private int numeroSucursales;
@@ -70,6 +73,8 @@ class Banco{
                 "\nNumero Sucursales: %d",getNombreBanco(),getNumeroSucursales());
     }
 }
+
+
 
 class Cheque1 {
     private String nombreCliente;
@@ -107,6 +112,7 @@ class Cheque1 {
         this.banco = banco;
     }
 
+
     public void calcularComisionBanco() {
         this.comisionBanco = 0.00003 * this.getValorCheque();
     }
@@ -129,6 +135,7 @@ class Cheque1 {
                         "\nComision del Banco: %.2f",
                 this.getBanco(),this.getNombreCliente(),this.getValorCheque(),this.getComisionBanco());
     }
+
 }
 public class Cheque {
     public static void main(String[] args) {
